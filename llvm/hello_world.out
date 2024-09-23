@@ -1,0 +1,216 @@
+#1
+_class
+  Object
+  _no_class
+  "<basic class>"
+  (
+  #1
+  _method
+    abort
+    Object
+    #1
+    _no_expr
+    : _no_type
+  #1
+  _method
+    type_name
+    String
+    #1
+    _no_expr
+    : _no_type
+  #1
+  _method
+    copy
+    SELF_TYPE
+    #1
+    _no_expr
+    : _no_type
+  )
+#1
+_class
+  IO
+  Object
+  "<basic class>"
+  (
+  #1
+  _method
+    out_string
+    #1
+    _formal
+      arg
+      String
+    SELF_TYPE
+    #1
+    _no_expr
+    : _no_type
+  #1
+  _method
+    out_int
+    #1
+    _formal
+      arg
+      Int
+    SELF_TYPE
+    #1
+    _no_expr
+    : _no_type
+  #1
+  _method
+    in_string
+    String
+    #1
+    _no_expr
+    : _no_type
+  #1
+  _method
+    in_int
+    Int
+    #1
+    _no_expr
+    : _no_type
+  )
+#1
+_class
+  Int
+  Object
+  "<basic class>"
+  (
+  #1
+  _attr
+    _val
+    _prim_slot
+    #1
+    _no_expr
+    : _no_type
+  )
+#1
+_class
+  Bool
+  Object
+  "<basic class>"
+  (
+  #1
+  _attr
+    _val
+    _prim_slot
+    #1
+    _no_expr
+    : _no_type
+  )
+#1
+_class
+  String
+  Object
+  "<basic class>"
+  (
+  #1
+  _attr
+    _val
+    Int
+    #1
+    _no_expr
+    : _no_type
+  #1
+  _attr
+    _str_field
+    _prim_slot
+    #1
+    _no_expr
+    : _no_type
+  #1
+  _method
+    length
+    Int
+    #1
+    _no_expr
+    : _no_type
+  #1
+  _method
+    concat
+    #1
+    _formal
+      arg
+      String
+    String
+    #1
+    _no_expr
+    : _no_type
+  #1
+  _method
+    substr
+    #1
+    _formal
+      arg
+      Int
+    #1
+    _formal
+      arg2
+      Int
+    String
+    #1
+    _no_expr
+    : _no_type
+  )
+#1
+_class
+  Main
+  Object
+  ".//test_files//while-val.cl"
+  (
+  #1
+  _attr
+    x
+    Int
+    #1
+    _no_expr
+    : _no_type
+  #1
+  _method
+    main
+    Object
+    #1
+    _dispatch
+      #1
+      _new
+        IO
+      : IO
+      out_string
+      (
+      #1
+      _dispatch
+        #1
+        _loop
+          #1
+          _lt
+            #1
+            _object
+              x
+            : Int
+            #1
+            _int
+              10
+            : Int
+          : Bool
+          #1
+          _assign
+            x
+            #1
+            _plus
+              #1
+              _object
+                x
+              : Int
+              #1
+              _int
+                1
+              : Int
+            : Int
+          : Int
+        : Object
+        type_name
+        (
+        )
+      : String
+      )
+    : IO
+  )

@@ -1,0 +1,14 @@
+/test_files/res/
+/ast-lex.o
+/ast-parse.o
+/cgen_supp.o
+/cgen-phase.o
+/cgen.o
+/codegen
+/codegen_test
+/cool-tree.o
+/dumptype.o
+/handle_flags.o
+/stringtab.o
+/tree.o
+/utilities.o
